@@ -1,0 +1,32 @@
+export default {
+    business: [
+        {
+            "id": "1",
+            "name": "OMGSQUEE",
+            "description": "100% Gluten free, Asian American desserts. Macarons, taiyaki, mochi donuts, cheesecakes, and bubble tea.",
+            "hours": "Mon - Wed: CLOSED Thu: 11a - 6p Fri - Sun: 11a - 9p",
+            "address": "4607 Bolm Rd. Austin, TX 78702"
+        },
+        {
+            "id": "2",
+            "name": "daiso",
+            "description":"High quality Japanese discount store. Majority of the items are priced from $1.50 to $5.",
+            "hours": "Everyday 10am - 9pm",
+            "address":"6929 Airport Blvd, Austin, TX 78752"
+        },
+        {
+            "id":"3",
+            "name": "Rabbit Food Grocery",
+            "description": "Your friendly neighborhood vegan grocery store.",
+            "hours": "Mon to Fri 10am - 7am. Sat to Sun 11am - 6pm.",
+            "address": "2425 Exposition Blvd STE A, Austin, TX 78703"
+        },
+        {
+            "id": "4",
+            "name": "Asahi Imports",
+            "description":"Japanese grocery store. Serving fresh onigiri and bento boxes!",
+            "hours":"Tues to Thurs, Sun 10am-5pm. Fri - Sat 10am to 6pm.",
+            "address": "6105 Burnet Road,Austin, TX 78757"
+        }
+       ]
+}

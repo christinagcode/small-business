@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, useState} from "react";
+import { BrowserRouter } from "react-router-dom";
+import cookie from "cookie";
+import Navigation from "./components/Navigation";
+import Router from "./Router";
+import Details from "./components/Details";
+import store from "./redux/store";
+
+
+import "./App.css";
+import { Provider } from "react-redux";
+
+
 
 function App() {
+
+  const [loggedIn, setLoggedIn] = useState(false)
+  useEffect(()=>{
+    const cookies = cookie.parse(document.cookie)
+    setLoggedIn(cookies.isLoggedIn === 'true' ? true : false)
+
+  }, [loggedIn]) 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <Provider store={store}>
+  <BrowserRouter>
+  
+      <Navigation loggedIn = {loggedIn} setLoggedIn ={setLoggedIn} />
+      <Router loggedIn = {loggedIn} setLoggedIn ={setLoggedIn}/>
+     
+    </BrowserRouter>
+    </Provider>
   );
 }
 
