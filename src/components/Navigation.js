@@ -18,6 +18,9 @@ const Navigation = (props)=> {
             Austin Small Business
           </Typography>
           <Button color="inherit" component={Link} to="/listings">Listings</Button>
+            {props.loggedIn && (
+              <Button color="inherit" component={Link} to="/addBusiness">Add</Button>
+            )}
           <Button color="inherit" component={Link} to="/login"></Button>
           {loggedIn ? (
               <div
