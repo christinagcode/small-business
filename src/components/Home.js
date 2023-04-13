@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 const Home = (props) => {
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} className="list-form">
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
@@ -31,7 +31,7 @@ const Home = (props) => {
               <TableCell component="th" scope="row">
                 <Link to={`/details/${business.id}`}>{business.name}</Link>
               </TableCell>
-              <TableCell align="right">{business.description}</TableCell>
+              <TableCell align="right" className="description-list">{business.description}</TableCell>
               <TableCell align="right">{business.hours}</TableCell>
               <TableCell align="right">{business.address}</TableCell>
               {props.loggedIn && (

@@ -12,7 +12,7 @@ const Navigation = (props)=> {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar className="navigation" position="relative">
+      <AppBar className="navigation" position="relative" sx={{backgroundColor:"#3BB371"}}>
         <Toolbar>
           <Typography variant="h6" sx={{ flexGrow: "1"}}>
             Austin Small Business
@@ -21,7 +21,6 @@ const Navigation = (props)=> {
             {props.loggedIn && (
               <Button color="inherit" component={Link} to="/addBusiness">Add</Button>
             )}
-          <Button color="inherit" component={Link} to="/login"></Button>
           {loggedIn ? (
               <div
               className="nav-list-item"

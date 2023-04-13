@@ -10,13 +10,13 @@ const Details = (props) => {
 
   return (
     <div>
-        kkkhelllooo???
       <h1>{selectBusiness.name}</h1>
       <p>{selectBusiness.description}</p>
       <p>{selectBusiness.hours}</p>
       <p>{selectBusiness.address}</p>
     </div>
+
   );
 };
-
+  
 export default Details;

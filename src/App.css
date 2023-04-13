@@ -5,3 +5,22 @@
 .nav-list-item:hover{
   cursor: pointer;
 }
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin-top: 30px;
+}
+
+.login-button{
+  padding: 40px
+}
+
+.list-form{
+  margin: 50px -20px 0px 100px;
+}
+
+.description-list{
+  margin-left: 300px;
+}
